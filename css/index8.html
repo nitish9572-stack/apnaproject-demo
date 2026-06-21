@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p::first-letter{
+        color:red;
+        font-size: 50px;
+    }
+    .head1{
+        color:green;
+    }
+    .head1:before {
+        content: '"';
+        color: red;
+        font-size: 50px;
+
+    }
+    .head1::after {
+        content: '"';
+        color: blue;
+        font-size: 50px;
+    }
+    
+    #head2{
+        color:blue;
+    }
+    input[type="password"]:disabled{
+        background-color: aqua;
+    }
+    div p{
+        color: red;
+    }
+    #pid{
+        color: blue;
+    }
+    .pclass{
+        color:red;
+    }
+</style>
+<body>
+    <p>This is a pg</p>
+    <p>This is a pg</p>
+    <p>This is a pg</p>
+    <p>This is a pg</p>
+
+    <h1 class="head1">this is a heading</h1>
+    <h2 id="head2">this is h2</h2>
+    <input type="text" placeholder="Enter your name">
+    <input type="password" placeholder="Enter your password" disabled>
+
+    <div>
+        <p>Paragraph is inside div</p>
+    </div>
+<p style="color:blueviolet;" class="pclass" id="pid">Paragraph is outside div</p>
+
+</body>
+</html>
